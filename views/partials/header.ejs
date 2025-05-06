@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/footer.css">
+
     <!-- CSS for <%=locals.color %> Pages -->
     <% if (locals.color) { %>
     <link rel="stylesheet"
@@ -16,15 +17,18 @@
     <link rel="stylesheet"
       href="/css/index.css">
     <% } %>
+
     <!-- CSS for <%=locals.color %> Index -->
     <% if (locals.color) { %>
     <link rel="stylesheet" href="/css/<%= locals.color %>-index.css">
     <% } %>
+
     <!-- CSS for Font <%= locals.size %> -->
     <% if (locals.size) { %>
     <link rel="stylesheet" href="/css/font<%= locals.size %>.css">
     <link rel="stylesheet" href="/css/button.css">
     <% } %>
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180"
       href="/img/favicon/apple-touch-icon.png">
@@ -37,6 +41,7 @@
     <title><%= locals.color != undefined ? locals.color.slice(0,1).toUpperCase()
       + locals.color.slice(1) : "" %>
       Pages</title>
+
   </head>
   <body>
     <div class="nav-background">
