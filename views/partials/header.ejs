@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <!-- CSS for Blue Pages -->
-    <link rel="stylesheet" href="/css/blue.css">
-    <!-- CSS for Blue Index -->
-    <link rel="stylesheet" href="/css/blue-index.css">
+    <!-- CSS for <%=locals.color %> Pages -->
+    <link rel="stylesheet" href="/css/<%= locals.color %>.css">
+    <!-- CSS for <%=locals.color %> Index -->
+    <link rel="stylesheet" href="/css/<%= locals.color %>-index.css">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180"
       href="/img/favicon/apple-touch-icon.png">
@@ -21,7 +21,8 @@
       href="/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="/img/favicon/site.webmanifest">
 
-    <title>Blue Pages</title>
+    <title><%= locals.color.slice(0,1).toUpperCase() + locals.color.slice(1) %>
+      Pages</title>
   </head>
   <body>
     <div class="nav-background">

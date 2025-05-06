@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <h1><%= locals.color.slice(0,1).toUpperCase() + locals.color.slice(1) %>
+    Pages</h1>
+  <p>Font <%= locals.size %> px</p>
+  <button id="myButton">Click to make me <%=
+    locals.color.slice(0,1).toUpperCase() + locals.color.slice(1) %>!</button>
+</div>
+
+<%- include('partials/header') %>

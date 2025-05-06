@@ -1,0 +1,12 @@
+<%- include ('partials/header') %>
+
+<div class="container">
+  <% for (let i = 0; i < 3; i++) { %>
+  <a class="f<%= i + 2 %>0" href="/<%= locals.color %>/<%= i + 2 %>0"><span><%=
+      color
+      %>
+      <%= i + 2 %>0px</span></a>
+  <% } %>
+</div>
+
+<%- include ('partials/footer') %>
