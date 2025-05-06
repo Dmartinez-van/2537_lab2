@@ -13,18 +13,20 @@ app.set("view engine", "ejs");
 
 // Index
 app.get("/", (req, res) => {
+  app.locals.color = undefined;
+  app.locals.size = undefined;
   res.render("index");
 });
 
 // Color Indexes
-app.get("/:color/{:size}", (req, res) => {
+app.get("/:color{/:size}", (req, res) => {
   const color = req.params.color;
   app.locals.color = color;
 
   const size = req.params.size || undefined;
   app.locals.size = size;
 
-  if (size) {
+  if (size != undefined) {
     res.render("color-size");
   } else {
     res.render("color");

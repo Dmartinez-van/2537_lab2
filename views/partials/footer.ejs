@@ -2,5 +2,12 @@
   <span>&copy; 2025 Example App.</span>
   <span class="img-credit"><a href="https://www.flaticon.com/free-icon/lotus-flower_3810196">Rainbow Petal Image Credit</a></span>
 </footer>    
+
+<% if (locals.color) { %>
+  <script src="/js/<%= locals.color %>.js"></script>
+<% } else { %>
+  <script src="/js/index.js"></script>
+  <% } %>
+<!-- JS for Red -->
 </body>
 </html>
